@@ -1,0 +1,67 @@
+.jumbotron {
+  height: 30vw;
+  background: url("../img/belvedere.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .jumbotron .jumbotronCover {
+    position: absolute;
+    top: 0;
+    background-color: rgba(26, 167, 165, 0.7);
+    width: 100%;
+    height: 100%; }
+    .jumbotron .jumbotronCover h1 {
+      font-size: 8vw; }
+    .jumbotron .jumbotronCover p {
+      font-size: 2vw; }
+
+.containerCategory {
+  position: relative;
+  width: 50%; }
+  .containerCategory h1:hover {
+    cursor: pointer; }
+
+.imageCategory {
+  display: block;
+  width: 100%;
+  height: auto;
+  content-fit: cover; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(47, 72, 88, 0.6); }
+
+.containerCategory:hover .overlay {
+  opacity: 1; }
+
+.textCategory {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.card {
+  border-radius: 0%;
+  background-color: transparent; }
+
+i, .card-title {
+  color: #1aa7a5; }
+
+.bg-color {
+  background-color: #1aa7a5; }
+
+footer {
+  background-color: #2f4858; }
+
+/*# sourceMappingURL=style.css.map */

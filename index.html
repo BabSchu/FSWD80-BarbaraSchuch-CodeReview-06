@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Travel-o-matic</title>
+</head>
+
+<body>
+    <header id="header"><!-- header start -->
+        <div class="jumbotron p-0 mb-0">
+            <div class="jumbotronCover text-white p-4 d-flex align-items-center">
+                <div class="w-75 h-100">
+                    <h1 class="display-4">Explore Vienna!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                </div>
+            </div>
+        </div>
+    </header><!-- header end--->
+
+    <main>
+        <div class="row no-gutters"><!--category pics--->
+            <div class="containerCategory col-12 col-sm-6 col-lg-3 p-0">
+                <img src="img/category/place.jpg" alt="Avatar" class="imageCategory">
+                <div class="overlay" id="btnPlace">
+                    <h1 class="textCategory text-white">Places</h1>
+                </div>
+            </div>
+            <div class="containerCategory col-12 col-sm-6 col-lg-3 p-0">
+                <img src="img/category/eat.jpg" alt="Avatar" class="imageCategory">
+                <div class="overlay" id="btnEat">
+                    <h1 class="textCategory text-white">Eat</h1>
+                </div>
+            </div>
+            <div class="containerCategory col-12 col-sm-6 col-lg-3 p-0">
+                <img src="img/category/event.jpg" alt="Avatar" class="imageCategory">
+                <div class="overlay" id="btnEvent">
+                    <h1 class="textCategory text-white">Event</h1>
+                </div>
+            </div>
+            <div class="containerCategory col-12 col-sm-6 col-lg-3 p-0">
+                <img src="img/category/art.jpg" alt="Avatar" class="imageCategory">
+                <div class="overlay" id="btnArt">
+                    <h1 class="textCategory text-white">StreetArt</h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end bg-color p-3">
+            <button class="btn btn-outline-light my-2 my-sm-0" id="btnShowAll" type="submit">Show all</button>
+        </div><!--category pics end--->
+
+        <!--cards for places/restaurant/events-->
+        <div class="container-fluid">
+            <div class="row" id="displayCard">
+                <!-- content from JS--->
+            </div>
+        </div>
+    </main>
+    
+    <footer class="py-2"><!-- footer start -->
+        <h3 class="text-center text-light font-weight-normal">Barbara Schuch</h3>
+        <h5 class="text-center text-light font-weight-normal">&copy; 2019</h5>
+    </footer><!-- footer end -->
+
+    <!--JQuery<--->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--popper.js--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--bootstrap.js--->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--JS script.js-->
+    <script src="JS/script.js" charset="utf-8"></script>
+
+</html>
