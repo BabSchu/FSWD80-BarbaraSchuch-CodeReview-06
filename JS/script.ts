@@ -34,7 +34,7 @@ constructor(name:string, description:string, city:string, zipCode:number, adress
                             <span class="font-weight-normal">${this.zipCode} ${this.city}<br>${this.adress} ${this.adressNr}</span>
                         </li> 
                         <li class="list-group-item text-muted">
-                          ${this.createdDate}
+                          Created: ${this.createdDate}
                         </li>           
                     </ul>
                 </div>
@@ -79,7 +79,7 @@ class Restaurant extends Place {
                             <img src="${this.type}" alt="">
                         </li>
                         <li class="list-group-item text-muted">
-                          ${this.createdDate}
+                          Created: ${this.createdDate}
                         </li>            
                     </ul>
                 </div>
@@ -129,7 +129,7 @@ class Events extends Place {
                           <span class="font-weight-normal"> € ${this.ticketPrice}</span>
                         </li>
                         <li class="list-group-item text-muted">
-                          ${this.createdDate}
+                          Created: ${this.createdDate}
                         </li>          
                     </ul>
                 </div>
@@ -170,7 +170,7 @@ class StreetArt extends Place {
                             <span class="font-weight-normal">${this.zipCode} ${this.city}<br>${this.adress} ${this.adressNr}</span>
                         </li>
                         <li class="list-group-item text-muted">
-                          ${this.createdDate}
+                          Created: ${this.createdDate}
                         </li>            
                     </ul>
                 </div>
@@ -180,36 +180,36 @@ class StreetArt extends Place {
 
 //objects
 
-let karlskirche = new Place("Karlskirche","Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1040, "Kreuzherrengasse", 1,"img/places/karlskirche.jpg","Created: 24.10.2019 12:45");
-let schlossSchönbrunn = new Place("Schloss Schönbrunn","Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1130, "Schönbrunner Schloßstraße", 47,"img/places/schoenbrunn.jpg",'Created: 23.10.2019 12:45');
-let prater = new Place("Schloss Schönbrunn","Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1020, "Prater", 7,"img/places/prater.jpg",'Created: 22.10.2019 12:45');
-let hundertwasser = new Place("KUNST HAUS WIEN. Museum Hundertwasser","Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1030, "Untere Weißgerberstraße", 13,"img/places/hundertwasser.jpg","Created: 21.10.2019 12:45");
+let karlskirche = new Place("Karlskirche","Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1040, "Kreuzherrengasse", 1,"img/places/karlskirche.jpg","24.10.2019 12:45");
+let schlossSchönbrunn = new Place("Schloss Schönbrunn","Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1130, "Schönbrunner Schloßstraße", 47,"img/places/schoenbrunn.jpg",'23.10.2019 12:45');
+let prater = new Place("Schloss Schönbrunn","Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1020, "Prater", 7,"img/places/prater.jpg",'22.10.2019 12:45');
+let hundertwasser = new Place("KUNST HAUS WIEN. Museum Hundertwasser","Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1030, "Untere Weißgerberstraße", 13,"img/places/hundertwasser.jpg","21.10.2019 12:45");
 
-let harvest = new Restaurant("Harvest", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1020, "Karmeliterplatz", 1, "img/eat/harvest.jpg", "Created: 20.10.2019 12:45","0676 4927790", "http://harvest-bistrot.at/", "https://www.happycow.net/img/category/category_vegan.svg");
-let hawidere = new Restaurant("Hawidere", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1150, "Ullmannstraße", 31, "img/eat/hawidere.jpg", "Created: 19.10.2019 12:45", "0664 1508429", "http://hawidere.at/", "https://www.happycow.net/img/category/category_veg-friendly.svg");
-let rupps = new Restaurant("Rupps", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1050, "Arbeitergasse", 46, "img/eat/rupps.jpg","Created: 18.10.2019 12:45", "01 5452284", "https://www.rupps.at/", "https://www.happycow.net/img/category/category_vegetarian.svg");
-let secretGarden = new Restaurant("Secret Garden", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1060, "Mariahilfer Straße", 45, "img/eat/secretGarden.jpg","Created: 17.10.2019 12:45", "01 5862839", "https://secret-garden-cafe.at/", "https://www.happycow.net/img/category/category_vegetarian.svg");
+let harvest = new Restaurant("Harvest", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1020, "Karmeliterplatz", 1, "img/eat/harvest.jpg", "20.10.2019 12:45","0676 4927790", "http://harvest-bistrot.at/", "https://www.happycow.net/img/category/category_vegan.svg");
+let hawidere = new Restaurant("Hawidere", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1150, "Ullmannstraße", 31, "img/eat/hawidere.jpg", "19.10.2019 12:45", "0664 1508429", "http://hawidere.at/", "https://www.happycow.net/img/category/category_veg-friendly.svg");
+let rupps = new Restaurant("Rupps", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1050, "Arbeitergasse", 46, "img/eat/rupps.jpg","18.10.2019 12:45", "01 5452284", "https://www.rupps.at/", "https://www.happycow.net/img/category/category_vegetarian.svg");
+let secretGarden = new Restaurant("Secret Garden", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1060, "Mariahilfer Straße", 45, "img/eat/secretGarden.jpg","17.10.2019 12:45", "01 5862839", "https://secret-garden-cafe.at/", "https://www.happycow.net/img/category/category_vegetarian.svg");
 
-let cats = new Events ("Cats", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1010, "Seilerstätte", 9,"img/events/cats.jpg","Created: 16.10.2019 12:45", "Ronacher", "13.11.2019", "18.30", 49);
-let seeed = new Events ("Seeed", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1150, "Roland-Rainer-Platz", 1,"img/events/seeed.jpg", "Created: 21.10.2019 12:45", "Wiener Stadthalle, Halle D", "1.11.2019", "20.00", 55.80);
-let basbaritenori = new Events ("Willi Resetarits & Basbaritenori", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1060, "Mariahilfer Straße", 81,"img/events/basbaritenori.jpg", "Created: 20.10.2019 12:45", "Stadtsaal", "17.12.2019", "20.00", 22.50);
-let unspelling = new Events("Unspelled", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1070, "Museumsplatz", 1,"img/events/unspelled.jpg", "Created: 22.10.2019 12:45" "TQW Studios", "14.11.2019", "19.30", 15);
+let cats = new Events ("Cats", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1010, "Seilerstätte", 9,"img/events/cats.jpg","16.10.2019 12:45", "Ronacher", "13.11.2019", "18.30", 49);
+let seeed = new Events ("Seeed", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1150, "Roland-Rainer-Platz", 1,"img/events/seeed.jpg", "21.10.2019 12:45", "Wiener Stadthalle, Halle D", "1.11.2019", "20.00", 55.80);
+let basbaritenori = new Events ("Willi Resetarits & Basbaritenori", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1060, "Mariahilfer Straße", 81,"img/events/basbaritenori.jpg", "20.10.2019 12:45", "Stadtsaal", "17.12.2019", "20.00", 22.50);
+let unspelling = new Events("Unspelled", "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.", "Vienna", 1070, "Museumsplatz", 1,"img/events/unspelled.jpg", "22.10.2019 12:45", "TQW Studios", "14.11.2019", "19.30", 15);
 
 let kobraKlimt = new StreetArt ("Eduardo Kobra", 
   "Kobra decided to reinterpret the famous photograph of Klimt with his cat, Katze. With an interesting detail: they will be standing on the roofs of Schiele's famous Krumau - Crescent of Houses (The Small City V).",
-  "Vienna", 1040, "Wiedner Hauptstraße", 78, "img/StreetArt/kobra_klimt.jpg", "Created: 25.10.2019 12:45", "curated by Calle Libre Festival", 2018, "Untitled" )
+  "Vienna", 1040, "Wiedner Hauptstraße", 78, "img/StreetArt/kobra_klimt.jpg", "25.10.2019 12:45", "curated by Calle Libre Festival", 2018, "Untitled" )
 
 let nychosFreud = new StreetArt ("Nychos - Rabbit Eye Movement", 
   "What lies beneath—or inside, rather—has been a longstanding interest of Nychos.The Dissection of Freud is just a taste of what will be on view at his subsequent solo show called IKON at the Jonathan Levine Gallery where other pop culture heavyweights are split, made see-through, or melted.",
-  "Vienna", 1090, "Spittelauer Lände", 12, "img/StreetArt/nychos_freud.jpg", "Created: 20.10.2019 12:45", "", 2016, "Vienna Therapy - Dissection of Freud" )
+  "Vienna", 1090, "Spittelauer Lände", 12, "img/StreetArt/nychos_freud.jpg", "20.10.2019 12:45", "", 2016, "Vienna Therapy - Dissection of Freud" )
 
 let skirlRuin = new StreetArt ("skirl and Ruin", 
   "The Viennese Street Artist SKIRL is best known for his distinctive black and white style with many parallel lines giving life to abstract objects and forms, developed from his own way of graffiti-style-writing in reduced colors with amorph elements. Ruin pulls his viewers into the immediacy of his pictures. He combines elements of early street art with his own approaches and creations. He plays with graffiti techniques and figural representations, which he sometimes reduces fragmentarily. Ruin is playful, imaginative, ironic, surrealist, humoresque. In his paintings we encounter bizarre characters, grotesque insects, flying fish, abstruse objects.",
-  "Vienna", 1020, "Obere Donaustraße", 101, "img/StreetArt/skirl_ruin.jpg", "Created: 29.10.2019 12:45", "", 2017, "Untitled")
+  "Vienna", 1020, "Obere Donaustraße", 101, "img/StreetArt/skirl_ruin.jpg", "29.10.2019 12:45", "", 2017, "Untitled")
 
 let cyrcleGaia = new StreetArt ("Cyrcle and Gaia", 
   "While representing one of the most challenging artistic endeavors, murals are simultaneously the source of great satisfaction, for artists as well as the public. Imagine, what is more, a large scale piece of art beginning its existence in the frenetical surroundings of a big city. This is the goal of the Cash, Cans & Candy 2014 project, organized by the Ernst Hilger Gallery during the summer in the Austria’s capitol Vienna. CYRCLE. and Gaia are responsible for creating a piece of art, a large mural that transpires the discourse of the architectural history of the city, on the wall on Wesbanhof Station in Vienna.", 
-  "Vienna", 1150, "Felberstraße", 1, "img/StreetArt/cyrcle_gaia.jpg", "Created: 25.10.2019 12:45", "curated by Cash, Cans & Candy", 2014, "Modern Antique")
+  "Vienna", 1150, "Felberstraße", 1, "img/StreetArt/cyrcle_gaia.jpg", "25.10.2019 12:45", "curated by Cash, Cans & Candy", 2014, "Modern Antique")
 
 //display Place/Events/Restaurants onclick
     
@@ -287,3 +287,35 @@ btnEvent.addEventListener("click",displayEvents);
 btnArt.addEventListener("click",displayStreetArt);
 btnShowAll.addEventListener("click",displayAll);
 
+// sort by createdDate
+
+var fileName = document.URL.split('/').pop();
+
+if(fileName == "index-asc.html"){
+
+    function comparebyCreatedDateAsc(date1, date2) {
+      return date1.createdDate.localeCompare(date2.createdDate);
+    }
+
+    showAll.sort(comparebyCreatedDateAsc);
+    arrayPlace.sort(comparebyCreatedDateAsc);
+    arrayEvents.sort(comparebyCreatedDateAsc);
+    arrayRestaurant.sort(comparebyCreatedDateAsc);
+    arrayStreetArt.sort(comparebyCreatedDateAsc);
+}
+
+else if(fileName == "index-desc.html"){
+  
+    function comparebyCreatedDateDesc(date1, date2) {
+      return date2.createdDate.localeCompare(date1.createdDate);
+    }
+
+    showAll.sort(comparebyCreatedDateDesc);
+    arrayPlace.sort(comparebyCreatedDateDesc);
+    arrayEvents.sort(comparebyCreatedDateDesc);
+    arrayRestaurant.sort(comparebyCreatedDateDesc);
+    arrayStreetArt.sort(comparebyCreatedDateDesc);
+}
+
+else if(fileName == "index"){
+}
